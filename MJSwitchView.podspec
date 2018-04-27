@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = { 'iosLiuPeng' => '392009255@qq.com' }
   s.source           = { :git => 'https://github.com/iosLiuPeng/MJSwitchView.git', :tag => s.version.to_s }
   s.platform     = :ios 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'Classes/*.{h,m,xib}'
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
