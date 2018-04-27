@@ -13,6 +13,8 @@
 		069B9669209307C5009CEEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069B9668209307C5009CEEEF /* Assets.xcassets */; };
 		069B966C209307C5009CEEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069B966A209307C5009CEEEF /* LaunchScreen.storyboard */; };
 		069B966F209307C5009CEEEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B966E209307C5009CEEEF /* main.m */; };
+		069B9678209308D3009CEEEF /* MJSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B9677209308D3009CEEEF /* MJSwitchView.m */; };
+		069B967C20930925009CEEEF /* MJSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069B967B20930925009CEEEF /* MJSwitchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		069B966B209307C5009CEEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069B966D209307C5009CEEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		069B966E209307C5009CEEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		069B9676209308D3009CEEEF /* MJSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSwitchView.h; sourceTree = "<group>"; };
+		069B9677209308D3009CEEEF /* MJSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSwitchView.m; sourceTree = "<group>"; };
+		069B967B20930925009CEEEF /* MJSwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MJSwitchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		069B965E209307C4009CEEEF /* MJSwitchView */ = {
 			isa = PBXGroup;
 			children = (
+				069B9675209308A1009CEEEF /* Classes */,
 				069B965F209307C4009CEEEF /* AppDelegate.h */,
 				069B9660209307C4009CEEEF /* AppDelegate.m */,
 				069B9662209307C4009CEEEF /* ViewController.h */,
@@ -70,6 +76,16 @@
 			);
 			path = MJSwitchView;
 			sourceTree = "<group>";
+		};
+		069B9675209308A1009CEEEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				069B9676209308D3009CEEEF /* MJSwitchView.h */,
+				069B9677209308D3009CEEEF /* MJSwitchView.m */,
+				069B967B20930925009CEEEF /* MJSwitchView.xib */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -129,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				069B966C209307C5009CEEEF /* LaunchScreen.storyboard in Resources */,
+				069B967C20930925009CEEEF /* MJSwitchView.xib in Resources */,
 				069B9669209307C5009CEEEF /* Assets.xcassets in Resources */,
 				069B9667209307C4009CEEEF /* Main.storyboard in Resources */,
 			);
@@ -142,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				069B9664209307C4009CEEEF /* ViewController.m in Sources */,
+				069B9678209308D3009CEEEF /* MJSwitchView.m in Sources */,
 				069B966F209307C5009CEEEF /* main.m in Sources */,
 				069B9661209307C4009CEEEF /* AppDelegate.m in Sources */,
 			);
@@ -286,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJSwitchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJSwitchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

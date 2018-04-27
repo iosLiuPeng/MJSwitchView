@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MJSwitchView">
+            <connections>
+                <outlet property="imgViewClose" destination="FKT-4B-ZYH" id="pd0-QB-b9h"/>
+                <outlet property="imgViewOpen" destination="YEH-Yj-TI5" id="LQ0-Tk-gfU"/>
+                <outlet property="imgViewThumb" destination="i0R-Ts-Awb" id="YWy-sW-89L"/>
+                <outlet property="lblClose" destination="Hp8-Fi-RBd" id="zai-N9-fBa"/>
+                <outlet property="lblOpen" destination="IFF-gC-HR8" id="myP-On-YZX"/>
+                <outlet property="lytThumbRight" destination="lxx-Wh-nTf" id="4jp-Wu-34M"/>
+                <outlet property="viewClose" destination="CYP-Xw-scw" id="jap-4o-EWH"/>
+                <outlet property="viewCover" destination="CKL-r8-inF" id="qpP-WC-6Cu"/>
+                <outlet property="viewOpen" destination="734-4Q-va0" id="INQ-ok-UEg"/>
+                <outlet property="viewThumb" destination="OLW-aw-Jtz" id="28B-cX-dYy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vWz-QT-VOe">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="734-4Q-va0" userLabel="View Select">
+                    <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_switch_on" translatesAutoresizingMaskIntoConstraints="NO" id="YEH-Yj-TI5">
+                            <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-gC-HR8">
+                            <rect key="frame" x="0.0" y="49" width="25" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YEH-Yj-TI5" firstAttribute="top" secondItem="734-4Q-va0" secondAttribute="top" id="Qce-1X-2lg"/>
+                        <constraint firstItem="YEH-Yj-TI5" firstAttribute="leading" secondItem="734-4Q-va0" secondAttribute="leading" id="TUi-ix-wTa"/>
+                        <constraint firstAttribute="bottom" secondItem="YEH-Yj-TI5" secondAttribute="bottom" id="WZ7-WP-FKn"/>
+                        <constraint firstAttribute="trailing" secondItem="YEH-Yj-TI5" secondAttribute="trailing" id="ade-Es-jgs"/>
+                        <constraint firstItem="IFF-gC-HR8" firstAttribute="leading" secondItem="734-4Q-va0" secondAttribute="leading" id="brF-sr-75n"/>
+                        <constraint firstItem="IFF-gC-HR8" firstAttribute="centerY" secondItem="734-4Q-va0" secondAttribute="centerY" id="vrV-Oo-9dR"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYP-Xw-scw" userLabel="View Normal">
+                    <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_switch_off" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-4B-ZYH">
+                            <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-Fi-RBd">
+                            <rect key="frame" x="115" y="49" width="143" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="FKT-4B-ZYH" firstAttribute="top" secondItem="CYP-Xw-scw" secondAttribute="top" id="Jry-CL-Lu3"/>
+                        <constraint firstAttribute="trailing" secondItem="FKT-4B-ZYH" secondAttribute="trailing" id="QF4-k1-KMW"/>
+                        <constraint firstAttribute="bottom" secondItem="FKT-4B-ZYH" secondAttribute="bottom" id="jh0-oP-9Uv"/>
+                        <constraint firstAttribute="trailing" secondItem="Hp8-Fi-RBd" secondAttribute="trailing" id="jji-3n-iRO"/>
+                        <constraint firstItem="FKT-4B-ZYH" firstAttribute="leading" secondItem="CYP-Xw-scw" secondAttribute="leading" id="lxa-4S-Tji"/>
+                        <constraint firstItem="Hp8-Fi-RBd" firstAttribute="centerY" secondItem="CYP-Xw-scw" secondAttribute="centerY" id="xgr-4m-BSY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLW-aw-Jtz" userLabel="View Thumb">
+                    <rect key="frame" x="5" y="5" width="110" height="110"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_swith_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-Ts-Awb" customClass="img_home_swith_thumb">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i0R-Ts-Awb" firstAttribute="top" secondItem="OLW-aw-Jtz" secondAttribute="top" id="EtQ-Pd-bot"/>
+                        <constraint firstAttribute="trailing" secondItem="i0R-Ts-Awb" secondAttribute="trailing" id="jM9-rV-cdX"/>
+                        <constraint firstItem="i0R-Ts-Awb" firstAttribute="leading" secondItem="OLW-aw-Jtz" secondAttribute="leading" id="klP-rm-iOM"/>
+                        <constraint firstAttribute="bottom" secondItem="i0R-Ts-Awb" secondAttribute="bottom" id="qY3-8i-7Cz"/>
+                        <constraint firstAttribute="width" secondItem="OLW-aw-Jtz" secondAttribute="height" multiplier="1:1" id="wC2-oA-hZY"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nE6-mE-mm3" appends="YES" id="jaw-bH-Iqd"/>
+                        <outletCollection property="gestureRecognizers" destination="rjT-Vy-rdh" appends="YES" id="gmW-fa-mcO"/>
+                    </connections>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-r8-inF">
+                    <rect key="frame" x="0.0" y="0.0" width="258" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.29722281678082191" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="734-4Q-va0" secondAttribute="trailing" id="7eG-jS-vVI"/>
+                <constraint firstItem="CKL-r8-inF" firstAttribute="top" secondItem="vWz-QT-VOe" secondAttribute="top" priority="751" id="BQn-N3-sVQ"/>
+                <constraint firstAttribute="bottom" secondItem="OLW-aw-Jtz" secondAttribute="bottom" constant="5" id="H2L-lc-Za6"/>
+                <constraint firstItem="CYP-Xw-scw" firstAttribute="top" secondItem="vWz-QT-VOe" secondAttribute="top" id="H90-uA-hBL"/>
+                <constraint firstAttribute="trailing" secondItem="CKL-r8-inF" secondAttribute="trailing" priority="751" id="Jyg-Er-1Zc"/>
+                <constraint firstAttribute="bottom" secondItem="CYP-Xw-scw" secondAttribute="bottom" id="PNP-Xr-kR8"/>
+                <constraint firstAttribute="bottom" secondItem="734-4Q-va0" secondAttribute="bottom" id="Pfk-to-cGk"/>
+                <constraint firstItem="734-4Q-va0" firstAttribute="leading" secondItem="vWz-QT-VOe" secondAttribute="leading" id="TpY-Kx-5O7"/>
+                <constraint firstItem="Hp8-Fi-RBd" firstAttribute="leading" secondItem="OLW-aw-Jtz" secondAttribute="trailing" priority="740" id="agw-sb-jRI"/>
+                <constraint firstAttribute="bottom" secondItem="CKL-r8-inF" secondAttribute="bottom" priority="751" id="b6o-AR-eAA"/>
+                <constraint firstItem="OLW-aw-Jtz" firstAttribute="leading" secondItem="IFF-gC-HR8" secondAttribute="trailing" priority="740" id="bcX-Jy-sNS"/>
+                <constraint firstItem="OLW-aw-Jtz" firstAttribute="top" secondItem="vWz-QT-VOe" secondAttribute="top" constant="5" id="cME-P6-fDr"/>
+                <constraint firstItem="734-4Q-va0" firstAttribute="top" secondItem="vWz-QT-VOe" secondAttribute="top" id="kaC-kU-T5e"/>
+                <constraint firstItem="OLW-aw-Jtz" firstAttribute="leading" secondItem="vWz-QT-VOe" secondAttribute="leading" constant="5" id="lxx-Wh-nTf"/>
+                <constraint firstAttribute="trailing" secondItem="OLW-aw-Jtz" secondAttribute="trailing" priority="750" constant="5" id="ngA-e1-TaK"/>
+                <constraint firstItem="CYP-Xw-scw" firstAttribute="leading" secondItem="vWz-QT-VOe" secondAttribute="leading" id="pI1-Su-w8d"/>
+                <constraint firstItem="CKL-r8-inF" firstAttribute="leading" secondItem="vWz-QT-VOe" secondAttribute="leading" priority="751" id="pow-Jf-jxo"/>
+                <constraint firstAttribute="trailing" secondItem="CYP-Xw-scw" secondAttribute="trailing" id="sxo-WC-aOJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rR7-t2-igR"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="vOZ-z5-Ymd" appends="YES" id="KYJ-VN-Mb9"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="-478"/>
+        </view>
+        <tapGestureRecognizer id="nE6-mE-mm3" userLabel="Tap Thumb Image View">
+            <connections>
+                <action selector="tapThumbView:" destination="-1" id="Pro-ao-n51"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="vOZ-z5-Ymd" userLabel="Tap Background View">
+            <connections>
+                <action selector="tapBackroundView:" destination="-1" id="5D7-rb-Yvn"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="rjT-Vy-rdh">
+            <connections>
+                <action selector="dragThumbView:" destination="-1" id="cOo-Bf-JvB"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="img_home_switch_off" width="139" height="71"/>
+        <image name="img_home_switch_on" width="139" height="71"/>
+        <image name="img_home_swith_thumb" width="62" height="62"/>
+    </resources>
+</document>
