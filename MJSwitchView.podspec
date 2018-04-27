@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/iosLiuPeng/MJSwitchView.git', :tag => s.version.to_s }
   s.platform     = :ios 
   s.ios.deployment_target = '7.0'
-  s.source_files = 'Classes/*'
+  s.source_files = 'Classes/*.{h,m,xib}'
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
   #   'view' => ['Assets/*.png']
