@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MJSwitchView'
   s.version          = '1.0.0'
-  s.summary          = 'Management animation starts & ends & pauses & continues, and animation does not stop because of exceptional circumstances.'
+  s.summary          = 'The Switch View visible in xib/SB.'
   s.homepage         = 'https://github.com/iosLiuPeng/MJSwitchView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'iosLiuPeng' => '392009255@qq.com' }
